@@ -11,7 +11,7 @@ let rec print_tree l n =
 
 |a :: b -> 
 	match a with
- Tree [] -> (print_string ((empty n) ^ "+-\n");print_tree b (n+1))
+ Tree [] -> (print_string ((empty n) ^ "+-\n" ^ (empty n) ^ " |\n");print_tree b (n+1))
 |Tree x -> (print_string ((empty n) ^ "*\n");print_tree x n);print_tree b (n-1);;
 
 print_tree [Tree [];Tree [Tree [];Tree []]] 0;;

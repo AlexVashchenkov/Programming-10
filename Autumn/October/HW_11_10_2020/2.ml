@@ -3,10 +3,10 @@ type ('a,'b) t = ('a * 'b) list;;
 let p = 11;;
 let k = 1023;;
 
-let rec init n f = 
+let rec innit n f = 
 	let rec initt n k f = 
-		if k = n then [] else (f k) :: (initt n (k+1) f)
-	in (initt n 0 f);;
+		if k = n then [] else (f k) :: (innit n (k+1) f)
+	in (innit n 0 f);;
 
 let rec create f n = init n (fun x -> f x);;
 

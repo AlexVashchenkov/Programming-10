@@ -14,10 +14,6 @@ let rec parse n =
 
 fst (parse 0);;
 
-let make_str 
-
-
-
 let rec print_structure l n = 
 	match l with
  [] -> ()
