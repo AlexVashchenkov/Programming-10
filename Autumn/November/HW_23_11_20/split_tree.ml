@@ -59,7 +59,7 @@ let rec make_tree l t =
 
 
 
-print_tree (make_tree (fst (split_by_var tree 7 ([],[]))) Leaf) [];;	 
+print_tree (make_tree (fst (split_by_var tree 6 ([],[]))) Leaf) [];;	 
 print_string "\n";;
-print_tree (make_tree (snd (split_by_var tree 7 ([],[]))) Leaf) [];;
+print_tree (make_tree (snd (split_by_var tree 6 ([],[]))) Leaf) [];;
 	
